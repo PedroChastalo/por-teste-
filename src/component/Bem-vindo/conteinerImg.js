@@ -1,17 +1,13 @@
 import React from "react";
 import '../../App.css';
 
-function conteinerImg({imagemSrc,}){
-    return(
-        <div style={{position:'relative', width:'100%', height:'100%'}}>
-            <img
-            src = {imagemSrc}
-            alt="imagem"
-            style={{width:'100%', height:'auto', display:'block'}}
-            />
-
+function ContainerImg({ imageSrc, children }) {
+   return (
+        <div className="container-img">
+            <img src={imageSrc} alt="Background" className="background-img" />
+            {children}
         </div>
     );
 }
 
-export default conteinerImg;
+export default ContainerImg;

@@ -1,23 +1,22 @@
-import React from 'react'; 
+import React from 'react';
 import '../../App.css';
-import conteinerImg from '../Bem-vindo/conteinerImg';
+import ContainerImg from '../Bem-vindo/conteinerImg';
+import ContainerDados from '../Bem-vindo/conteinerDados';
 
+function Welcome() {
+    const handleClick = () => {
+        console.log('Button clicked!');
+    };
 
-function Welcome(){
-    const clique= () =>{
-        console.log('botão clicado !');
-    }
-    return(
-        <section id= "inicio">
-            <conteinerImg imagemSrc= '../../img/wallpaper_white.jpg'>
-                <h1 id="titulo-bem">Bem- Vindo ao meu <br></br>portifolio!</h1>
-                <button id="botao-bv" onClick={clique} >Entrar em contato</button>
-                <conteinerDados>
-                    
-                </conteinerDados>
-            </conteinerImg>
+    return (
+        <section id="inicio">
+            <ContainerImg imageSrc={require('../../img/welcome-box/Fundo-box2.jpg')}>
+                <h1 id="titulo-bem">Bem-vindo ao meu <br /> portfólio!</h1>
+                <button id="botao-bv" onClick={handleClick}>Entrar em contato</button>
+                <ContainerDados />
+            </ContainerImg>
         </section>
     );
-};
+}
 
-export default Welcome; 
+export default Welcome;
