@@ -128,6 +128,8 @@ body{
 
 }
 
+/*componentes do box de welcome.js*/
+
 #titulo-roda{
   display: flex;
   flex-direction: row;
@@ -195,3 +197,75 @@ body{
   text-align: left; 
 }
 
+/*componentes do rodape*/
+
+.container-img-roda {
+  position: relative;
+  height: 300px;
+  margin-left: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+
+.background-img-roda {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*informacoes de contato no roda pe*/
+
+.container-form-contact {
+  position: absolute;
+  width: 100%;
+  left: 20px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #FFF;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.titulo-rodape {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.info-title {
+  width: 100%;
+  text-align: center;
+}
+
+.info-text {
+  margin-left: 10px;
+}
+
+.info-text h4, .info-text p {
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .container-img-roda {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .container-form-contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+}
